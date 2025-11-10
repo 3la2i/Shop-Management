@@ -11,7 +11,7 @@ export default function ClientForm({
   if (!showForm) return null;
 
   return (
-    <div className="fixed inset-0 z-40 flex items-end justify-center bg-black bg-opacity-40">
+    <div className="fixed inset-0 z-40 flex items-end justify-center backdrop-blur-md bg-opacity-40">
       <div className="w-full max-w-md bg-slate-800 border-t border-slate-700 rounded-t-lg p-6 animate-slide-up relative">
         <button onClick={onCancel} className="absolute top-2 left-2 text-white text-xl">×</button>
         <div className="text-white text-right text-lg font-bold mb-4">

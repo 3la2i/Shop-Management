@@ -17,3 +17,4 @@ export { default as ProductCard } from './ProductCard';
 // Hooks
 export { useClients } from './hooks/useClients';
 export { useProducts } from './hooks/useProducts'; 
+export { useInventory } from './hooks/useInventory';

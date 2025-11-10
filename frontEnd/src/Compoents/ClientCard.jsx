@@ -42,12 +42,12 @@ export default function ClientCard({ client, onEdit, onDelete, onShowDetails }) 
           <Eye className="w-4 h-4 ml-1" />
           تفاصيل
         </button>
-        <button 
+        {/* <button 
           onClick={() => onDelete(client._id)} 
           className="border border-red-600 text-red-400 hover:bg-red-600 hover:text-white rounded py-1 flex items-center justify-center text-sm"
         >
           <Trash2 className="w-4 h-4" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

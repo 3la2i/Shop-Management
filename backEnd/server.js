@@ -22,6 +22,7 @@ app.use(authMiddleware)
 
 app.use('/api/client', require('./Routes/client'));
 app.use('/api/product', require('./Routes/product'));
+app.use('/api/purchase', require('./Routes/purchase'));
 
 // Example Route
 app.get('/', (req, res) => {

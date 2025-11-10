@@ -76,15 +76,19 @@ export default function Home() {
           </div>
         </Link>
     
-        <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow p-4 h-28 opacity-50 cursor-not-allowed">
-          <DebtIcon />
-          <span className="mt-2 text-slate-700 font-semibold">الديون</span>
-        </div>
+        {/* <Link to="/inventory" className="block">
+          <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow p-4 h-28 hover:shadow-lg transition-shadow cursor-pointer">
+            <DebtIcon />
+            <span className="mt-2 text-slate-700 font-semibold">الديون</span>
+          </div>
+        </Link> */}
         
-        <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow p-4 h-28 opacity-50 cursor-not-allowed">
-          <CartIcon />
-          <span className="mt-2 text-slate-700 font-semibold">جرد المبيعات</span>
-        </div>
+        <Link to="/inventory" className="block">
+          <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow p-4 h-28 hover:shadow-lg transition-shadow cursor-pointer">
+            <CartIcon />
+            <span className="mt-2 text-slate-700 font-semibold">جرد المبيعات</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

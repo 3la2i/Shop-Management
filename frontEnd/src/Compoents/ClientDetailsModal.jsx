@@ -58,7 +58,7 @@ export default function ClientDetailsModal({
 
   return (
     <>
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+      <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-opacity-60">
         <div className="bg-slate-800 border border-slate-700 rounded-lg max-w-sm w-full p-6 relative max-h-[90vh] overflow-y-auto">
           <button 
             className="absolute top-2 left-2 text-white text-2xl font-bold" 

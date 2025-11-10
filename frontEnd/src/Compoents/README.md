@@ -138,3 +138,25 @@ Custom hook for managing product-related state and operations.
 - `handleEdit`: Function to handle product editing
 - `handleDelete`: Function to handle product deletion
 - `resetForm`: Function to reset form state 
+
+### useInventory
+Custom hook for listing and summarizing purchases for the sales inventory (جرد المبيعات).
+
+**Filters:**
+- `startDate`: Filter purchases from date (YYYY-MM-DD)
+- `endDate`: Filter purchases to date (YYYY-MM-DD)
+- `status`: One of `paid`, `partial`, `unpaid` (or empty for all)
+- `customerId`: Filter by a specific customer (or empty for all)
+
+**Returns:**
+- `purchases`: Array of populated purchases (with `items.productId` and `customerId`)
+- `summary`: `{ overall, byDay }` where `overall` contains totals (sales, paid, debt, count)
+- `loading`: Boolean indicating if data is loading
+- `clients`: Array of clients for the customer filter dropdown
+- `filters`: Current filter values `{ startDate, endDate, status, customerId }`
+- `setFilters`: Function to update filters
+- `refetch`: Function to manually refetch list and summary
+
+Notes:
+- The hook uses the `Authorization` token from `localStorage`.
+- On request failure, it returns an empty list/summary to keep the UI stable.
